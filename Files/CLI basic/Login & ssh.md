@@ -49,9 +49,12 @@ SSH works by connecting client program to an ssh server called sshd.
       rsync -avz local_directory username@hostname:/remote/directory/
       ```
       `rsync` is more efficient for transferring large files and directories, especially when only a few files have changed.
-       **a** for archive, **v** for verbose, **z** for compress, **h** for human readble
-       **--progress**  Show progress during transfer.
-       **--delete** Delete files in the destination directory that are not in the source directory.
+       - **a** for archive
+       - **v** for verbose
+       - **z** for compress
+       - **h** for human readble
+       - **--progress**  Show progress during transfer.
+       - **--delete** Delete files in the destination directory that are not in the source directory.
 
 4. **Method 1 - for key auth**
 **Generating SSH keys**:
@@ -70,7 +73,7 @@ SSH works by connecting client program to an ssh server called sshd.
     This command copies the public key to the remote server, enabling passwordless login.
 
      (or)
-   
+ 
     copy publickey from client to remote
     **``~/.ssh/id_rsa_pub ``**  to  **``~/.ssh/authorized_keys``**
 

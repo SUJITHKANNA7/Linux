@@ -52,6 +52,10 @@
   ```
 
   - `*` denotes time intervals (minutes, hours, day of month, month, day of week).
+  - `,` match multiple values (10,12,14)
+  - `-` range values (10-12)
+  - `/` specific step value (*/4)
+    
   - Example: Run a script every day at 3 AM:
     ```
     0 3 * * * /path/to/script.sh
